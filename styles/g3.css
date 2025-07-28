@@ -11,6 +11,11 @@
 
 /* fonts */
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* nav bar */
 
 .navbar{
@@ -79,7 +84,19 @@ nav > ul > li > a{
     margin: 25px 0px;
 
 }
+.feature-button{
+     background-color: #FF900E;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 180px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
 
+
+    
+}
 /* buttons */
 
 
@@ -115,6 +132,69 @@ nav > ul > li > a{
 
 /* banner part header */
 
+
+/* feature part */
+
+.feature{
+    
+
+    margin-top: 85px;
+ 
+    gap: 75px;
+    align-items: center;
+
+}
+.feature-content{
+    
+}
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.7rem;
+    border-radius: 8px;
+}
+.feature-title{
+    font-size: 2.81rem;
+}
+.feature-description{
+    font-size: 1rem;
+    color: #727272;
+    text-align: justify;
+}
+
+
+
+.ql-color{
+    font-weight: 500;
+    color: #727272 ;
+}
+.oo-color{
+    color: #131313;
+    font-weight: bold;
+
+}
+.f-color{
+    font-weight: bold;
+    color: #FF900E;
+}
+
+
+
+/* feature part */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive */
 
 @media screen and (max-width:576px) {
@@ -124,6 +204,13 @@ nav > ul > li > a{
 
     }
     .nav-pannel{
+        flex-direction: column;
+    }
+
+    .feature-image{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature{
         flex-direction: column;
     }
 
