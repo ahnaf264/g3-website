@@ -50,11 +50,22 @@ nav > ul > li > a{
 
 
 /* shared item */
+
+
+main > section{
+    margin-top: 130px;
+}
+
+
 .dark01{
     color: #131313 ;
 }
 .dark02{
     color: #424242;
+}
+.dark03
+{
+    color: #727272;
 }
 
 .display-flex{
@@ -97,6 +108,35 @@ nav > ul > li > a{
 
     
 }
+
+
+.experience-button{
+     background-color: #FF900E;
+    color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
+     border: none;
+    border-radius: 8px;
+     width: 342px;
+    height: 200px;
+    padding: 45px;
+    text-align: center;
+    margin-left: -92px;
+    margin-top: -72px;
+    
+
+
+}
+#exp-year{
+    font-size:4.1rem;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
 /* buttons */
 
 
@@ -137,20 +177,22 @@ nav > ul > li > a{
 
 .feature{
     
-
-    margin-top: 85px;
- 
     gap: 75px;
     align-items: center;
 
+    padding: 0 1.9rem;
+
 }
 .feature-content{
+
+   
     
+
 }
 .feature-image{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1.7rem;
+    gap: 125px;
     border-radius: 8px;
 }
 .feature-title{
@@ -180,13 +222,155 @@ nav > ul > li > a{
 
 
 
-/* feature part */
+/* feature part ends */
+
+
+/* fact box parts */
+
+.facts-title{
+    font-size: 2.82rem;
+   font-weight: bold;
+   color: #131313;
+
+}
+.facts-description{
+    color: #727272;
+    text-align: left;
+
+}
 
 
 
+.facts-box{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    height: 242px;
+    width: 242px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+   
+}
 
 
 
+.facts-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.facts-box-title{
+    font-size: 2.82rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.facts-box-description{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+/* sponsor content */
+
+.sponsor-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.sponsor-title{
+    font-size: 2.83rem;
+    font-weight: bold;
+    color: #131313;
+    
+}
+.sponsor-image{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 155px ;
+    margin-top: 50px;
+}
+  
+
+
+.sponsor-image img{
+    filter: grayscale(100%);
+}
+/* sponsor end */
+
+
+/* experience section start */
+
+
+.experience{
+    gap: 140px;
+    align-items: center;
+}
+
+.experience-title{
+font-size: 2.82rem ;
+font-weight: bold;
+color: #131313;
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+.experience-description{
+    /* width: 586px ;
+    height: 78px; */
+}
+
+.experience-card{
+   
+    
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #131313;
+    margin: 10px 0;
+}
+.card-description{
+    font-size: 1.2rem;
+    color: #727272;
+    text-align: left ;
+    margin: 10px 0;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer{
+    background-color: #FFF4E7;
+    width: 1440px;
+    height: 100px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 130px;
+    font-size: 2rem;
+    margin-bottom: 120px;
+    padding-top: 50px;
+}
 
 
 
@@ -199,7 +383,7 @@ nav > ul > li > a{
 
 @media screen and (max-width:576px) {
 
-    .navbar{
+    .navbar, .experience{
         flex-direction: column;
 
     }
@@ -207,14 +391,55 @@ nav > ul > li > a{
         flex-direction: column;
     }
 
-    .feature-image{
+    .feature-image,.sponsor-image{
         grid-template-columns: repeat(1,1fr);
     }
     .feature{
         flex-direction: column;
     }
+    .facts-card{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        justify-content: center;
+        padding: 80px;
+        align-items: center;
+        margin-top: 50px;
+       
+        
+    }
+    .experience-image{
+        width: 100%;
+    }
+    .experience-button{
+        margin: 0 auto;
+       
+    }
+    .footer{
+        width: 100%;
+        padding-top: 0;
+    }
+    .sponsor-image{
+        gap: 100px;
+        margin-left: 100px;
+    }
 
 
     
+}
+
+@media screen and (min-width:576px) and (max-width:992px)  {
+
+    .feature-image{
+        gap: 30px;
+    }
+    .facts-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sponsor-image{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 40px;
+    }
+
+     
 }
 
